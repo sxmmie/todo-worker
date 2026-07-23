@@ -1,0 +1,12 @@
+dist/
+vendor
+.idea
+.vscode/
+.golangci.toml
+.pre-commit-config.yaml
+.config.yaml
+.env
+.envrc
+# Snyk Security Extension - AI Rules (auto-generated)
+.github/instructions/snyk_rules.instructions.md
+.synk/

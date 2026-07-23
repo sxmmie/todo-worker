@@ -1,3 +1,7 @@
 package api
 
-func main() {}
+import "fmt"
+
+func main() {
+	fmt.Println("Welcome to Todo Worker API")
+}
