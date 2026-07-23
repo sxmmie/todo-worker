@@ -1,7 +1,17 @@
 package api
 
-import "fmt"
+import (
+	"github.com/gin-gonic/gin"
+)
 
 func main() {
-	fmt.Println("Welcome to Todo Worker API")
+	var router *gin.Engine = gin.Default()
+	router.GET("/", func(c *gin.Context) {
+		c.JSON(200, gin.H{
+			"message": "Todo worker API is running",
+			"status":  "succuess",
+		})
+	})
+
+	router.Run(":3000")
 }
